@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Notepad</class>
+ <widget class="QMainWindow" name="Notepad">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>383</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="res.qrc">
+    <normaloff>:/icon/notepad.png</normaloff>:/icon/notepad.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QTextEdit" name="textEdit"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>500</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionNew"/>
+    <addaction name="actionOpen"/>
+    <addaction name="actionSave"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="actionRedo"/>
+    <addaction name="actionUndo"/>
+    <addaction name="separator"/>
+    <addaction name="actionFind"/>
+    <addaction name="actionReplace"/>
+   </widget>
+   <widget class="QMenu" name="menuFont">
+    <property name="title">
+     <string>Font</string>
+    </property>
+    <addaction name="actionFont"/>
+    <addaction name="actionSize"/>
+    <addaction name="actionSizeIncrease"/>
+    <addaction name="actionSizeDecrease"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuFont"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionNew">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icon/new.png</normaloff>:/icon/new.png</iconset>
+   </property>
+   <property name="text">
+    <string>New</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icon/open.png</normaloff>:/icon/open.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icon/save.png</normaloff>:/icon/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icon/exit.png</normaloff>:/icon/exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionRedo">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icon/redo.png</normaloff>:/icon/redo.png</iconset>
+   </property>
+   <property name="text">
+    <string>Redo</string>
+   </property>
+  </action>
+  <action name="actionUndo">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icon/undo.png</normaloff>:/icon/undo.png</iconset>
+   </property>
+   <property name="text">
+    <string>Undo</string>
+   </property>
+  </action>
+  <action name="actionFont">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icon/font.png</normaloff>:/icon/font.png</iconset>
+   </property>
+   <property name="text">
+    <string>Font</string>
+   </property>
+  </action>
+  <action name="actionFind">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icon/find.png</normaloff>:/icon/find.png</iconset>
+   </property>
+   <property name="text">
+    <string>Find</string>
+   </property>
+  </action>
+  <action name="actionReplace">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icon/replace.png</normaloff>:/icon/replace.png</iconset>
+   </property>
+   <property name="text">
+    <string>Replace</string>
+   </property>
+  </action>
+  <action name="actionincreaseFontSize">
+   <property name="text">
+    <string>Size+</string>
+   </property>
+  </action>
+  <action name="actiondecreaseFontSize">
+   <property name="text">
+    <string>Size-</string>
+   </property>
+  </action>
+  <action name="actionresizeFontSize">
+   <property name="text">
+    <string>Default</string>
+   </property>
+  </action>
+  <action name="actionFont_2">
+   <property name="text">
+    <string>Font</string>
+   </property>
+  </action>
+  <action name="actionFont_3">
+   <property name="text">
+    <string>Font</string>
+   </property>
+  </action>
+  <action name="actionSize">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icon/default.png</normaloff>:/icon/default.png</iconset>
+   </property>
+   <property name="text">
+    <string>Default</string>
+   </property>
+  </action>
+  <action name="actionSize_2">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icon/decrease.png</normaloff>:/icon/decrease.png</iconset>
+   </property>
+   <property name="text">
+    <string>Size-</string>
+   </property>
+  </action>
+  <action name="actionDefault">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icon/default.png</normaloff>:/icon/default.png</iconset>
+   </property>
+   <property name="text">
+    <string>Default</string>
+   </property>
+  </action>
+  <action name="actionSize_3">
+   <property name="text">
+    <string>Size</string>
+   </property>
+  </action>
+  <action name="actionSizeIncrease">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icon/increase.png</normaloff>:/icon/increase.png</iconset>
+   </property>
+   <property name="text">
+    <string>Size</string>
+   </property>
+  </action>
+  <action name="actionSizeDecrease">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icon/decrease.png</normaloff>:/icon/decrease.png</iconset>
+   </property>
+   <property name="text">
+    <string>Size</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>
